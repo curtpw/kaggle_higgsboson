@@ -1,0 +1,37 @@
+{
+  "name": "node-reader",
+  "bin": {
+    "node-reader": "./bin/node-reader.js"
+  },
+  "description": "Node.js command line RSS reader",
+  "version": "0.0.4",
+  "author": {
+    "name": "Oleksii Kulikov"
+  },
+  "homepage": "https://github.com/yeexel/node-reader",
+  "bugs": {
+    "url": "https://github.com/yeexel/node-reader/issues"
+  },
+  "keywords": [
+    "parser",
+    "terminal",
+    "rss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeexel/node-reader.git"
+  },
+  "dependencies": {
+    "optimist": ">=0.6.0",
+    "request": ">=2.22.0",
+    "colors": ">=0.6.0",
+    "fancy-timestamp": ">=0.0.3",
+    "feedparser": ">=0.16.1",
+    "mongodb": ">=1.3.11"
+  },
+  "main": "node-reader",
+  "readme": "<h1>node-reader</h1>\n<p>Node.js command line RSS reader</p>\n<p>Oleksii Kulikov \"yeexel@gmail.com\"</p>\n<h2>Installation</h2>\n<p><b>Note!</b> Before using this app you've to install MongoDB on your machine. For more information click <a href=\"http://docs.mongodb.org/manual/installation/\">here.</a></p>\n<p><b>Unix:</b> <code>sudo npm install -g node-reader</code></p>\n<p>You can add an alias for convinience: <code>alias nr='node-reader'</code></p>\n<h2>Usage</h2>\n<p>Available options: <code>--add, --purge, --list, --read, --help</code></p>\n<h3>--add</h3>\n<p>If you want to add a RSS feed, just type <code>nr --add \"<i>alias</i>\" \"<i>url</i>\"</code></p>\n<p><b>Example: </b><code>nr -add \"engadget\" \"http://www.engadget.com/rss.xml\"</code></p>\n<h3>--list</h3>\n<p>Type <code>nr --list</code> to get the current RSS feeds.</p>\n<img src=\"http://oi41.tinypic.com/nvzjft.jpg\" alt=\"list\">\n<h3>--read</h3>\n<p>This option shows you the RSS feed. Example <code>nr --read \"engadget\"</code></p>\n<img src=\"http://oi43.tinypic.com/xd5u6r.jpg\" alt=\"read\">\n<h3>--purge</h3>\n<p>Type <code>nr --purge \"engadget\"</code> to remove this feed from your collection.</p>\n<h2>License</h2>\n<p>The MIT License (MIT)\n\nCopyright (c) \"2013\" \"Oleksii Kulikov and contributors.\"<br><br>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.<br><br>\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE</p>\n",
+  "readmeFilename": "README.md",
+  "_id": "node-reader@0.0.4",
+  "_from": "node-reader@"
+}
